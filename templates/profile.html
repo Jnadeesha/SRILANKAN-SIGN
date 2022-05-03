@@ -1,0 +1,32 @@
+{% extends "lay.html" %}
+{% block body %}
+<div class="profile">
+
+<h1>Your Profile</h1>
+<div>
+    <p>Your account details are below:</p>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>{{ account['fullname'] }}</td>
+        </tr>
+  <tr>
+            <td>Username:</td>
+            <td>{{ account['username'] }}</td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>{{ account['password'] }}</td>
+            <td><a href="">Edit</a></td>
+
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>{{ account['email'] }}</td>
+        </tr>
+    </table>
+</div>
+
+</div>
+
+   {% endblock %}

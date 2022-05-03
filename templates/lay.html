@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery Tilted Page Scroll by Pete R. | The Pete Design</title>
+  <meta name="title" content="jQuery One Page Scroll by Pete R. | The Pete Design" />
+  <meta name="description" content="Create a beautiful 3D tilted effect on scroll with jQuery Tilted Page Scroll plugin by Pete Rojwongsuriya" />
+
+  <meta content="http://www.thepetedesign.com/demos/tiltedpage_scroll_demo.html" property="og:url" />
+  <meta content="http://www.thepetedesign.com/images/tiltedpage_scroll_image.png" property="og:image" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="shortcut icon" id="favicon" href="favicon.png"> 
+  <meta name="author" content="Pete R.">
+  <link rel="canonical" href="http://www.thepetedesign.com/demos/tiltedpage_scroll_demo.html" />
+  <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.tiltedpage-scroll.js"></script>
+  <link href='tiltedpage-scroll.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/tiltedpage-scroll.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/a.css')}}">
+    <!-- video -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style2.css')}}">
+
+  
+  </head>
+
+  <body>
+    
+<div class="wrapper"> 
+    <!-- End AdPacks.com Zone Code -->
+<div class="main">
+      <div class="header">
+        <div id="nav">
+      <ul class="nav-menu">
+                
+
+        <li><a href="/" class="three-d">
+          Home
+          <span class="three"><span class="front">Home</span><span class="back">Home</span></span>
+        </a></li>
+        <li><a href="/learn" class="three-d">
+          Learn          <span class="three"><span class="front"> Learn</span><span class="back">Learn</span></span>
+        </a></li>
+        <li><a href="/base3" class="three-d">
+          Translate
+          <span class="three"><span class="front">Translate</span><span class="back">Translate</span></span>
+        </a></li>
+       <li><a href="#" class="three-d">
+          Message
+          <span class="three"><span class="front">Message</span><span class="back">Message</span></span>
+        </a></li>
+        <li><a href="/comment" class="three-d">
+          Comments
+          <span class="three"><span class="front">Comments</span><span class="back">Comments</span></span>
+        </a></li>
+        <li><a href="/profile" class="three-d">
+          Profile
+          <span class="three"><span class="front">Profile</span><span class="back">Profile</span></span>
+        </a>
+         
+        </li>
+        <li><a href="/logout" class="three-d">
+          logout
+          <span class="three"><span class="front">logout</span><span class="back">logout</span></span>
+        </a></li>
+        
+       <image class="" src="{{ url_for('static', filename='img/l.png')}}" style="width: 150px;margin-left:950px;margin-top: -70px;">
+        
+        
+        
+        
+        
+      </ul>
+    </div> 
+      </div>
+    {% block body %} {% endblock %}
+
+      <section class="page5" style=" background-color: #131419; width: 1450px;height: 300px; margin-left: -100px;">
+        	
+        <div class="footer-section about" style="width: 380px;padding-top:100px;margin-left: 150px;">
+    			       <image class="" src="{{ url_for('static', filename='img/l.png')}}" style="width: 100px;margin-left:-10px;margin-top: -70px;">
+
+
+    			<p style="margin-top: -20px;color: #cbd6d5;margin-left: 20px;">
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat.
+    			<br>
+    			</p>
+    	    		</div>
+
+    			<div class="social-media" style="padding-left:80px; ">
+
+					    <a href="#"><i class="fab fa-facebook"></i></a>
+					    <a href="#"><i class="fab fa-twitter"></i></a>
+					    <a href="#"><i class="fab fa-whatsapp"></i></a>
+					    <a href="#"><i class="fab fa-instagram"></i></a>
+					    <a href="#"><i class="fab fa-youtube"></i></a>
+           <div class="fill"></div>
+
+				</div>
+				<div class="contact" style="padding-left:80px; ">
+					<h4>Contact Us</h4>
+					<ul>
+					 <li><a href="#"><i class="fab fa-phone">+945454578787</i></a></li>
+					 <li><a href="#"><i class="fab fa-phone">+945454578787</i></a></li>
+					 <li><a href="#"><i class="fab fa-envelope">jananinadeesha@gmail.com</i></a></li>
+					 <li><a href="#"><i class="fab fa-envelope">jananinadeesha@gmail.com</i></a></li>
+					</ul>
+
+				</div>
+
+
+      </section>
+      
+    </div>
+    
+  </div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11278966-3"></script>
+
+
+
+        <script src="{{url_for('static',filename='js/script1.js')}}"></script>
+
+        <script src="{{url_for('static',filename='js/jquery.tiltedpage-scroll.js')}}"></script>
+          <script src="https://kit.fontawesome.com/5a99d1260f.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

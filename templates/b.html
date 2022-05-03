@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/b.css')}}">
+
+
+</head>
+<body>
+	<div class="header">
+        <div id="nav">
+      <ul class="nav-menu">
+        <image class="" src="{{ url_for('static', filename='img/l.png')}}" style="width: 150px;margin-left: -1200px;">
+
+        <li><a href="/" class="three-d">
+          Home
+          <span class="three"><span class="front">Home</span><span class="back">Home</span></span>
+        </a></li>
+        <li><a href="/pythonlogin" class="three-d">
+          Login          <span class="three"><span class="front"> Login</span><span class="back">Login</span></span>
+        </a></li>
+        <li><a href="/register" class="three-d">
+          Register
+          <span class="three"><span class="front">Register</span><span class="back">Register</span></span>
+        </a></li>
+        
+        
+        
+      </ul>
+    </div> 
+      </div>
+	<div class="tab">
+        <image class="ima1" src="{{ url_for('static', filename='img/giphy.gif')}}" >
+        <image class="ima2" src="{{ url_for('static', filename='img/tab.png')}}">
+
+</div>
+<image class="" src="{{ url_for('static', filename='img/t.png')}}" style="width:200px;margin-top: 80px;margin-left: 150px;">
+<h1>
+  <span>S</span>
+  <span>R</span>
+  <span>I</span>&#9; 
+
+  <span>  L</span>
+    <span>A</span>
+  <span>N</span>
+  <span>K</span>
+  <span>A</span>
+  <span>N</span>
+<br>
+  <span>S</span>
+  <span>I</span>
+  <span>G</span>
+  <span>N</span>
+</h1>
+<div>
+            <image class="ima1" src="{{ url_for('static', filename='img/h.png')}}" style="width: 150px;float: left;">
+            <image class="ima1" src="{{ url_for('static', filename='img/h.png')}}" style="width: 150px;">
+            <image class="ima1" src="{{ url_for('static', filename='img/h.png')}}" style="width: 150px;">
+
+</div>
+
+<script type="text/javascript">
+	
+let container = document.querySelector('.tab')
+let card = document.querySelector('.tab')
+let cardImge = document.querySelector('.tab img')
+let cardTitle = document.querySelector('.tab img')
+
+container.addEventListener('mousemove', (e)=> {
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 22
+    let yAxis = (window.innerHeight / 2 - e.pageY) / 22
+
+    card.style.transform = `rotateX(${yAxis}deg) rotateY(${xAxis}deg)`
+})
+
+container.addEventListener('mouseenter', (e)=> {
+
+    cardTitle.style.transform = "translateZ(150px)"
+    cardInfo.style.transform = "translateZ(125px)"
+    cardBtn.style.transform = "translateZ(100px)"
+})
+
+container.addEventListener('mouseleave', (e)=> {
+    card.style.transition = "all ease 0.2s"
+    cardImge.style.transform = "translateZ(0px) rotateZ(0deg)"
+    cardTitle.style.transform = "translateZ(0px)"
+    
+})
+
+</script>
+</body>
+</html>

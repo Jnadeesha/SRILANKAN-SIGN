@@ -1,0 +1,67 @@
+{% extends "lay.html" %}
+{% block body %}
+
+<div class="video">
+<div id="menu-btn" class="fas fa-bars"></div>
+
+<div class="container" style="background-color: white">
+
+    <div class="side-bar">
+
+        <ul class="list" style="height:600px; overflow-y: auto;">
+            <li class="active" data-src={{ url_for('static', filename="images/sign.mp4") }}><image src="{{ url_for('static', filename='img/family/mother.png')}}" style="width: 400px" ></li>
+            <li data-src={{ url_for('static', filename="images/sign.mp4") }}><image src="{{ url_for('static', filename='img/family/father.png')}}" style="width: 300px; height: 400px" ></li>
+            <li data-src={{ url_for('static', filename="images/vid-7.mp4") }}><image src="{{ url_for('static', filename='img/family/gm.png')}}" style="width: 400px" ></li>
+            <li data-src={{ url_for('static', filename="images/vid-7.mp4") }}><image src="{{ url_for('static', filename='img/family/gf.png')}}" style="width: 400px" ></li>
+            <li data-src={{ url_for('static', filename="images/vid-7.mp4") }}><image src="{{ url_for('static', filename='img/family/eb.png')}}" style="width: 500px; height: 350px" ></li>
+            <li data-src={{ url_for('static', filename="images/vid-7.mp4") }}><image src="{{ url_for('static', filename='img/family/es.png')}}" style="width: 500px" ></li>
+            <li data-src={{ url_for('static', filename="images/vid-7.mp4") }}><image src="{{ url_for('static', filename='img/family/yb.png')}}" style="width: 00px" ></li>
+            <li data-src={{ url_for('static', filename="images/vid-7.mp4") }}><image src="{{ url_for('static', filename='img/family/ys.png')}}" style="width: 500px" ></li>
+            <li data-src={{ url_for('static', filename="images/vid-7.mp4") }}><image src="{{ url_for('static', filename='img/family/son.png')}}" style="width: 400px" ></li>
+            <li data-src={{ url_for('static', filename="images/vid-7.mp4") }}><image src="{{ url_for('static', filename='img/family/da.png')}}" style="width: 400px" ></li>
+            <li data-src={{ url_for('static', filename="images/vid-7.mp4") }}><image src="{{ url_for('static', filename='img/family/ms.png')}}" style="width: 400px" ></li>
+            <li data-src={{ url_for('static', filename="images/vid-7.mp4") }}><image src="{{ url_for('static', filename='img/family/bappa.png')}}" style="width: 400px" ></li>
+            <li data-src={{ url_for('static', filename="images/vid-7.mp4") }}><image src="{{ url_for('static', filename='img/family/baby.png')}}" style="width: 400px" ></li>
+            <li data-src={{ url_for('static', filename="images/vid-7.mp4") }}><image src="{{ url_for('static', filename='img/family/annt.png')}}" style="width: 400px" ></li>
+            <li data-src={{ url_for('static', filename="images/vid-7.mp4") }}><image src="{{ url_for('static', filename='img/family/uncle.png')}}" style="width: 500px; height: 350px" ></li>
+            <li data-src={{ url_for('static', filename="images/vid-7.mp4") }}><image src="{{ url_for('static', filename='img/family/girl.png')}}" style="width: 400px" ></li>
+            <li data-src={{ url_for('static', filename="images/vid-7.mp4") }}><image src="{{ url_for('static', filename='img/family/boy.png')}}" style="width: 400px" ></li>
+            
+        </ul>
+
+    </div>
+
+    <div class="video-container">
+<image src="{{ url_for('static', filename='img/family/tittle.png')}}" style="width: 600px" >
+          <video loop muted autoplay controls>
+    <source src={{ url_for('static', filename="images/vid-3.mp4") }} type="video/mp4">
+  </video>
+
+    </div>
+
+</div>
+</div>
+<script>
+
+let sideBar = document.querySelector('.container .side-bar');
+
+document.querySelector('#menu-btn').onclick = () =>{
+    sideBar.classList.toggle('active');
+};
+
+let video = document.querySelector('.container .video-container video');
+let videoLinks = document.querySelectorAll('.container .side-bar .list li');
+
+videoLinks.forEach(link =>{
+    link.onclick = () =>{
+        let src = link.getAttribute('data-src');
+        video.src = src;
+        sideBar.classList.remove('active');
+        videoLinks.forEach(remove =>{remove.classList.remove('active')});
+        link.classList.add('active');
+    }
+})
+
+</script>
+    
+   {% endblock %}
